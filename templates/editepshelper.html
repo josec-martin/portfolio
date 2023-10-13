@@ -64,34 +64,49 @@
           <div class="text-center">
             <h1 class="h2">001 : EditEPS Helper</h1>
           </div>
-          <p>Nulla facilisi. Vivamus vestibulum, elit in scelerisque ultricies, nisl nunc pulvinar ligula,
-            id sodales arcu sapien in nisi. Quisque libero enim, mattis non augue posuere, venenatis
-            dapibus urna.</p>
+          <p>EditEPS Helper is a PyQt5 application whose purpose is to help to use the package editeps.
+            Editeps is a LaTeX package whose purpose is to add LaTeX elements in an EPS file through
+            LaTeX. It is a package that I created many years ago.</p>
 
+          <!--
           <blockquote>
             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</p>
             <small class="pull-right">Irina Martin</small>
           </blockquote>
+          -->
         </div>
       </div>
 
-      
+      <p>To use editeps with an EPS file, we need to know the bounding box of the EPS file and give a
+        scaling factor that determines the size of the LaTeX elements that we want to introduce. If we
+        want the LaTeX elements introduced in the EPS file to have the same size as in the text, it is
+        necessary to calculate the scaling factor that editeps uses.</p>
+
+      <p>EditEPS Helper reads the bounding box of the selected EPS file and calculates the scaling factor,
+        that way the \LaTeX\ elements inside the EPS file and in the text are the same size. It also gives
+        us an idea of the page, text, and EPS image relations.</p>
+
+      <p>In the following figures, we can see the original EPS file and its version edited with EditEPS.</p>
       
       <div class="col-md-8 col-md-offset-2 section-container-spacer">
         <div class="row">
           <div class="col-xs-12 col-md-6">
-            <img src="./static/assets/images/work001-02.jpg" class="img-responsive" alt="">
-            <p>Menphis skyline</p>
+            <img src="./static/assets/images/eps-o.png" class="img-responsive" alt="">
+            <p><b>Original EPS file</b></p>
           </div>
           <div class="col-xs-12 col-md-6">
-            <img src="./static/assets/images/work001-03.jpg" class="img-responsive" alt="">
-            <p>Menphis skyline</p>
+            <img src="./static/assets/images/eps-ed.png" class="img-responsive" alt="">
+            <p><b>EPS file edited with EditEPS</b></p>
           </div>
         </div>
       </div>
 
       <div class="col-xs-12">
+        <p>The EditEPS Helper interface has two windows, the Main Window and the Outline Window.</p>
         <img src="./static/assets/images/editepshelper-wins.png" class="img-responsive" alt="">
+        <p><b>EditEPS Helper Main Window and Outline Window</b></p>
+        <p>&nbsp;</p>
+        <p align="center"><a href="static/assets/docs/editepshelper.pdf" class="btn btn-primary btn-lg">EditEPS Helper Manual</a></p>
       </div>
 
     </div>
