@@ -59,15 +59,14 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <img src="./static/assets/images/work001-01.jpg" class="img-responsive" alt="">
+        <img src="./static/assets/images/web_manual2pdf-top.png" class="img-responsive" alt="">
         <div class="card-container">
           <div class="text-center">
             <h1 class="h2">003 : web_manual2pdf</h1>
           </div>
           <p>
-            Nulla facilisi. Vivamus vestibulum, elit in scelerisque ultricies, nisl nunc pulvinar ligula,
-            id sodales arcu sapien in nisi. Quisque libero enim, mattis non augue posuere, venenatis
-            dapibus urna.
+            This project aims to download a web manual to our machine with PDF documents instead of web documents.
+            It has two scripts, web_manual2pdf.py and rename_dir_files.py.
           </p>
 
           <!--
@@ -79,24 +78,43 @@
         </div>
       </div>
 
-      
-      
-      <div class="col-md-8 col-md-offset-2 section-container-spacer">
-        <div class="row">
-          <div class="col-xs-12 col-md-6">
-            <img src="./static/assets/images/work001-02.jpg" class="img-responsive" alt="">
-            <p>Menphis skyline</p>
-          </div>
-          <div class="col-xs-12 col-md-6">
-            <img src="./static/assets/images/work001-03.jpg" class="img-responsive" alt="">
-            <p>Menphis skyline</p>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-xs-12">
-        <img src="./static/assets/images/work001-04.jpg" class="img-responsive" alt="">
-      </div>
+      <p>
+        A lot of manuals are on the Internet. Generally, they are a set of web pages inside a web
+        folder with one index web page on that web folder that refers to the manual web pages. This
+        web folder is the root folder of the manual. The URL of the manual refers to the index web
+        page. Sometimes the URL is the path of the index web page file, and sometimes is the path
+        of the root folder of the manual, in which case the index web page of the manual is the
+        default web page file of the root folder. The manual is a set of web pages inside a structure
+        of web folders, all of them inside the root folder. The web manual folder is the same as the
+        root folder of the manual.
+      </p>
+      <p>
+        The aim of this project is double. First, it is to know the href attribute values of the a tags
+        of the index web page referenced by the manual URL. These values are web pages, that are
+        separated into two groups the internal ones and the external ones. One of those web pages is
+        <i>internal</i> if its web folder is inside the root folder of the manual. The <i>external</i>
+        web pages are the non-internal ones. These internal web pages are the content of the manual.
+        The second aim is to download the information on the internal web pages. This information is
+        stored in an output directory. Each web page in the manual is stored in a PDF file. These PDF
+        files are in a directory tree similar to that of the original root folder of the manual.
+      </p>
+      <p>
+        Since some web pages of the manual are default web page files, and we do not know their names,
+        e.g. index.html, or default.html, this project uses [default] for they and [default].pdf for
+        their PDF versions.
+      </p>
+      <p>
+        This project has two modules and two scripts. The modules are file_and_dir_utils.py and
+        web_manual2pdf_mod.py. The scripts are rename_dir_files.py and web_manual2pdf.py. The main script
+        is web_manual2pdf.py.
+      </p>
+
+      <p>&nbsp;</p>
+      <p><b>For more details</b></p>
+      <p align="center">
+        <a href="static/assets/docs/web_manual2pdf.pdf" class="btn btn-primary btn-lg">web_manual2pdf Manual</a>
+      </p>
 
     </div>
   </div>
