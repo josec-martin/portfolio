@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect
 import csv
+import requests
 
 app = Flask(__name__)
 
@@ -33,6 +34,9 @@ def submit_form():
         try:
             data = request.form.to_dict()
             if save_data(data):
+                msg = data["email"] + "\n" + data["subject"] + "\n" + data["message"]
+                requests.post("https://ntfy.sh/jcmr-portfolio-msg",
+                              data=msg.encode(encoding='utf-8'))
                 return redirect('/thankyou.html')
         except Exception as err:
             print(f"Error: {err}")
