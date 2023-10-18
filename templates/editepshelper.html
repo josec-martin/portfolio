@@ -13,7 +13,7 @@
   <meta name="msapplication-tap-highlight" content="no">
   
   <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/apple-icon-180x180.png">
-  <link href="./static/assets/favicon.ico" rel="icon">
+  <link href="./static/assets/portfolio.ico" rel="icon">
 
   <title>Title page</title>  
 
@@ -67,8 +67,8 @@
           <div class="text-center">
             <h1 class="h2">001 : EditEPS Helper</h1>
           </div>
-          <p>EditEPS Helper is a PyQt5 application whose purpose is to help to use the package editeps.
-            Editeps is a LaTeX package whose purpose is to add LaTeX elements in an EPS file through
+          <p>EditEPS Helper is a PyQt5 application. Its purpose is to help to use the package editeps.
+            Editeps is a LaTeX package that allows us to add LaTeX elements in an EPS figure through
             LaTeX. It is a package that I created many years ago.</p>
 
           <!--
@@ -80,14 +80,13 @@
         </div>
       </div>
 
-      <p>To use editeps with an EPS file, we need to know the bounding box of the EPS file and give a
-        scaling factor that determines the size of the LaTeX elements that we want to introduce. If we
-        want the LaTeX elements introduced in the EPS file to have the same size as in the text, it is
-        necessary to calculate the scaling factor that editeps uses.</p>
+      <p>To use editeps with an EPS file, we need to know the dimensions of the EPS figure (width and height)
+        and give a scaling factor that determines the size of the output EPS file. The dimension of the
+        output EPS figure is essential when we want to control the size of its LaTeX elements.</p>
 
-      <p>EditEPS Helper reads the bounding box of the selected EPS file and calculates the scaling factor,
-        that way the \LaTeX\ elements inside the EPS file and in the text are the same size. It also gives
-        us an idea of the page, text, and EPS image relations.</p>
+      <p>EditEPS Helper calculates the dimension of the figure in the selected EPS file and the scaling factor,
+        in such a way the LaTeX elements inside the output EPS figure coincide with the dimension of the
+        document text. It also gives us an idea of the page, text, and EPS image relations.</p>
 
       <p>In the following figures, we can see the original EPS file and its version edited with EditEPS.</p>
       
